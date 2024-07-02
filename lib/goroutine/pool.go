@@ -1,10 +1,10 @@
 package goroutine
 
 import (
-	"ehang.io/nps/lib/common"
-	"ehang.io/nps/lib/file"
 	"github.com/astaxie/beego/logs"
 	"github.com/panjf2000/ants/v2"
+	"github.com/sllt/nps/lib/common"
+	"github.com/sllt/nps/lib/file"
 	"io"
 	"net"
 	"strings"

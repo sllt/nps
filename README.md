@@ -7,20 +7,6 @@
 
 此版本基于 nps 0.26.10的基础上二次开发而来。
 
-***DockerHub***： [NPS](https://hub.docker.com/r/yisier1/nps) [NPC](https://hub.docker.com/r/yisier1/npc)
-
-# 交流群
-聊天灌水QQ群：619833483
-
-# 特价云服务器  
-国内BGP，游戏开服，2核 2G 15M上行 25元/月，[专属连接，首月5折](https://www.rainyun.com/MjY0MzY1_)
-
-  
-# 捐赠
-![image](image/new/payCode.png)
-
-
-
 ## 更新日志  
 - 2024-06-01  v0.26.19  
   - golang 版本升级到 1.22.

@@ -6,13 +6,13 @@ import (
 	"net/url"
 	"sync"
 
-	"ehang.io/nps/lib/cache"
-	"ehang.io/nps/lib/common"
-	"ehang.io/nps/lib/conn"
-	"ehang.io/nps/lib/crypt"
-	"ehang.io/nps/lib/file"
 	"github.com/astaxie/beego/logs"
 	"github.com/pkg/errors"
+	"github.com/sllt/nps/lib/cache"
+	"github.com/sllt/nps/lib/common"
+	"github.com/sllt/nps/lib/conn"
+	"github.com/sllt/nps/lib/crypt"
+	"github.com/sllt/nps/lib/file"
 )
 
 type HttpsServer struct {

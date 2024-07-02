@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"ehang.io/nps/lib/file"
+	"github.com/sllt/nps/lib/file"
 	"strings"
 )
 
@@ -25,7 +25,7 @@ func (s *GlobalController) Index() {
 	s.Data["globalBlackIpList"] = strings.Join(global.BlackIpList, "\r\n")
 }
 
-//添加全局黑名单IP
+// 添加全局黑名单IP
 func (s *GlobalController) Save() {
 	//global, err := file.GetDb().GetGlobal()
 	//if err != nil {

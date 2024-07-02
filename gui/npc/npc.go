@@ -1,10 +1,6 @@
 package main
 
 import (
-	"ehang.io/nps/client"
-	"ehang.io/nps/lib/common"
-	"ehang.io/nps/lib/daemon"
-	"ehang.io/nps/lib/version"
 	"fmt"
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/app"
@@ -12,6 +8,10 @@ import (
 	"fyne.io/fyne/v2/layout"
 	"fyne.io/fyne/v2/widget"
 	"github.com/astaxie/beego/logs"
+	"github.com/sllt/nps/client"
+	"github.com/sllt/nps/lib/common"
+	"github.com/sllt/nps/lib/daemon"
+	"github.com/sllt/nps/lib/version"
 	"io/ioutil"
 	"os"
 	"path"

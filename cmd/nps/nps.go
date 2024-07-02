@@ -1,9 +1,9 @@
 package main
 
 import (
-	"ehang.io/nps/bridge"
-	"ehang.io/nps/lib/daemon"
 	"flag"
+	"github.com/sllt/nps/bridge"
+	"github.com/sllt/nps/lib/daemon"
 	"log"
 	"os"
 	"os/exec"
@@ -12,18 +12,18 @@ import (
 	"strings"
 	"sync"
 
-	"ehang.io/nps/lib/file"
-	"ehang.io/nps/lib/install"
-	"ehang.io/nps/lib/version"
-	"ehang.io/nps/server"
-	"ehang.io/nps/server/connection"
-	"ehang.io/nps/server/tool"
-	"ehang.io/nps/web/routers"
+	"github.com/sllt/nps/lib/file"
+	"github.com/sllt/nps/lib/install"
+	"github.com/sllt/nps/lib/version"
+	"github.com/sllt/nps/server"
+	"github.com/sllt/nps/server/connection"
+	"github.com/sllt/nps/server/tool"
+	"github.com/sllt/nps/web/routers"
 
-	"ehang.io/nps/lib/common"
-	"ehang.io/nps/lib/crypt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	"github.com/sllt/nps/lib/common"
+	"github.com/sllt/nps/lib/crypt"
 
 	"github.com/kardianos/service"
 )

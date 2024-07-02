@@ -2,13 +2,13 @@ package common
 
 import (
 	"bytes"
-	"ehang.io/nps/lib/version"
 	"encoding/base64"
 	"encoding/binary"
 	"errors"
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	"github.com/sllt/nps/lib/version"
 	"html/template"
 	"io"
 	"io/ioutil"
@@ -21,7 +21,7 @@ import (
 	"strings"
 	"sync"
 
-	"ehang.io/nps/lib/crypt"
+	"github.com/sllt/nps/lib/crypt"
 )
 
 // Get the corresponding IP address through domain name

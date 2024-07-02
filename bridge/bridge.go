@@ -3,10 +3,10 @@ package bridge
 import (
 	"crypto/tls"
 	_ "crypto/tls"
-	"ehang.io/nps/lib/nps_mux"
 	"encoding/binary"
 	"errors"
 	"fmt"
+	"github.com/sllt/nps/lib/nps_mux"
 	"net"
 	"os"
 	"strconv"
@@ -14,15 +14,15 @@ import (
 	"sync"
 	"time"
 
-	"ehang.io/nps/lib/common"
-	"ehang.io/nps/lib/conn"
-	"ehang.io/nps/lib/crypt"
-	"ehang.io/nps/lib/file"
-	"ehang.io/nps/lib/version"
-	"ehang.io/nps/server/connection"
-	"ehang.io/nps/server/tool"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	"github.com/sllt/nps/lib/common"
+	"github.com/sllt/nps/lib/conn"
+	"github.com/sllt/nps/lib/crypt"
+	"github.com/sllt/nps/lib/file"
+	"github.com/sllt/nps/lib/version"
+	"github.com/sllt/nps/server/connection"
+	"github.com/sllt/nps/server/tool"
 )
 
 var ServerTlsEnable bool = false

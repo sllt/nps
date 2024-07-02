@@ -2,12 +2,12 @@ package proxy
 
 import (
 	"context"
-	"ehang.io/nps/lib/common"
-	"ehang.io/nps/lib/conn"
-	"ehang.io/nps/lib/file"
-	"ehang.io/nps/lib/goroutine"
 	"errors"
 	"github.com/astaxie/beego/logs"
+	"github.com/sllt/nps/lib/common"
+	"github.com/sllt/nps/lib/conn"
+	"github.com/sllt/nps/lib/file"
+	"github.com/sllt/nps/lib/goroutine"
 	"io"
 	"net"
 	"net/http"

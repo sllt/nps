@@ -5,9 +5,9 @@ import (
 	"os"
 	"strconv"
 
-	"ehang.io/nps/lib/pmux"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/logs"
+	"github.com/sllt/nps/lib/pmux"
 )
 
 var pMux *pmux.PortMux

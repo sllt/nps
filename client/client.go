@@ -3,7 +3,7 @@ package client
 import (
 	"bufio"
 	"bytes"
-	"ehang.io/nps/lib/nps_mux"
+	"github.com/sllt/nps/lib/nps_mux"
 	"net"
 	"net/http"
 	"strconv"
@@ -14,10 +14,10 @@ import (
 	"github.com/astaxie/beego/logs"
 	"github.com/xtaci/kcp-go"
 
-	"ehang.io/nps/lib/common"
-	"ehang.io/nps/lib/config"
-	"ehang.io/nps/lib/conn"
-	"ehang.io/nps/lib/crypt"
+	"github.com/sllt/nps/lib/common"
+	"github.com/sllt/nps/lib/config"
+	"github.com/sllt/nps/lib/conn"
+	"github.com/sllt/nps/lib/crypt"
 )
 
 type TRPClient struct {
@@ -34,7 +34,7 @@ type TRPClient struct {
 	once           sync.Once
 }
 
-//new client
+// new client
 func NewRPClient(svraddr string, vKey string, bridgeConnType string, proxyUrl string, cnf *config.Config, disconnectTime int) *TRPClient {
 	return &TRPClient{
 		svrAddr:        svraddr,
@@ -51,7 +51,7 @@ func NewRPClient(svraddr string, vKey string, bridgeConnType string, proxyUrl st
 var NowStatus int
 var CloseClient bool
 
-//start
+// start
 func (s *TRPClient) Start() {
 	CloseClient = false
 retry:
@@ -85,7 +85,7 @@ retry:
 	s.handleMain()
 }
 
-//handle main connection
+// handle main connection
 func (s *TRPClient) handleMain() {
 	for {
 		flags, err := s.signal.ReadFlag()
@@ -152,7 +152,7 @@ func (s *TRPClient) newUdpConn(localAddr, rAddr string, md5Password string) {
 	}
 }
 
-//pmux tunnel
+// pmux tunnel
 func (s *TRPClient) newChan() {
 	tunnel, err := NewConn(s.bridgeConnType, s.vKey, s.svrAddr, common.WORK_CHAN, s.proxyUrl)
 	if err != nil {
